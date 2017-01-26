@@ -19001,7 +19001,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue-spa-5dot4\\resources\\assets\\js\\views\\About.vue"
+__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\About.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "About"
 }__vue_options__.render = __vue_template__.render
@@ -19014,9 +19014,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5c3d6266", __vue_options__)
+    hotAPI.createRecord("data-v-5a769824", __vue_options__)
   } else {
-    hotAPI.reload("data-v-5c3d6266", __vue_options__)
+    hotAPI.reload("data-v-5a769824", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] About.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19035,7 +19035,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(139)
 
 /* template */
-var __vue_template__ = __webpack_require__(148)
+var __vue_template__ = __webpack_require__(150)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -19047,7 +19047,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue-spa-5dot4\\resources\\assets\\js\\views\\Contact.vue"
+__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Contact.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "Contact"
 }__vue_options__.render = __vue_template__.render
@@ -19060,9 +19060,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-44eb3539", __vue_options__)
+    hotAPI.createRecord("data-v-cca41912", __vue_options__)
   } else {
-    hotAPI.reload("data-v-44eb3539", __vue_options__)
+    hotAPI.reload("data-v-cca41912", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] Contact.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19081,7 +19081,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(140)
 
 /* template */
-var __vue_template__ = __webpack_require__(150)
+var __vue_template__ = __webpack_require__(148)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -19093,7 +19093,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue-spa-5dot4\\resources\\assets\\js\\views\\Home.vue"
+__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Home.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "Home"
 }__vue_options__.render = __vue_template__.render
@@ -19106,9 +19106,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d425add4", __vue_options__)
+    hotAPI.createRecord("data-v-0e1178d0", __vue_options__)
   } else {
-    hotAPI.reload("data-v-d425add4", __vue_options__)
+    hotAPI.reload("data-v-0e1178d0", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19121,27 +19121,30 @@ module.exports = __vue_exports__
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row"
+    staticClass: "columns"
   }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_vm._v("contact page")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
-}]}
+    staticClass: "column"
+  }, _vm._l((_vm.statuses), function(status) {
+    return _c('div', {
+      staticClass: "message"
+    }, [_c('div', {
+      staticClass: "message-header"
+    }, [_c('p', [_vm._v("\n\t\t\t\t\t\t" + _vm._s(status.user.name) + " said...\n\t\t\t\t\t")]), _vm._v(" "), _c('p', [_vm._v("\n\t\t\t\t\t\t" + _vm._s(_vm.postedOn(status)) + "\n\t\t\t\t\t")])]), _vm._v(" "), _c('div', {
+      staticClass: "message-body",
+      domProps: {
+        "textContent": _vm._s(status.body)
+      }
+    }, [_vm._v("\n\t\t\t\t\tI'm an example component!\n\t\t\t\t")])])
+  }))])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-44eb3539", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-0e1178d0", module.exports)
   }
 }
 
@@ -19170,7 +19173,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5c3d6266", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-5a769824", module.exports)
   }
 }
 
@@ -19179,30 +19182,27 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "columns"
+    staticClass: "row"
   }, [_c('div', {
-    staticClass: "column"
-  }, _vm._l((_vm.statuses), function(status) {
-    return _c('div', {
-      staticClass: "message"
-    }, [_c('div', {
-      staticClass: "message-header"
-    }, [_c('p', [_vm._v("\n\t\t\t\t\t\t" + _vm._s(status.user.name) + " said...\n\t\t\t\t\t")]), _vm._v(" "), _c('p', [_vm._v("\n\t\t\t\t\t\t" + _vm._s(_vm.postedOn(status)) + "\n\t\t\t\t\t")])]), _vm._v(" "), _c('div', {
-      staticClass: "message-body",
-      domProps: {
-        "textContent": _vm._s(status.body)
-      }
-    }, [_vm._v("\n\t\t\t\t\tI'm an example component!\n\t\t\t\t")])])
-  }))])])
-},staticRenderFns: []}
+    staticClass: "col-md-8 col-md-offset-2"
+  }, [_c('div', {
+    staticClass: "panel panel-default"
+  }, [_c('div', {
+    staticClass: "panel-heading"
+  }, [_vm._v("contact page")]), _vm._v(" "), _c('div', {
+    staticClass: "panel-body"
+  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-d425add4", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-cca41912", module.exports)
   }
 }
 
