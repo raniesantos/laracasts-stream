@@ -2200,9 +2200,9 @@ klaw@^1.0.0:
   optionalDependencies:
     graceful-fs "^4.1.9"
 
-laravel-mix@^0.5.2:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.5.6.tgz#ddfa95233333242bcb7b9d2a7bbfc3a267a05def"
+laravel-mix@^0.5.16:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-0.5.16.tgz#a3b8ed4a836e006757922fd8eeb41ab9fcb6e0a6"
   dependencies:
     babel-core "^6.20.0"
     babel-loader "^6.2.9"
