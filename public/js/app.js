@@ -18599,9 +18599,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = {
-    mounted: function mounted() {
-        console.log('Component ready.');
-    }
+	mounted: function mounted() {
+		console.log('Component ready.');
+	}
 };
 
 /***/ }),
@@ -18736,6 +18736,7 @@ var routes = [{
 
 /* harmony default export */ __webpack_exports__["a"] = new __WEBPACK_IMPORTED_MODULE_0_vue_router___default.a({
 	routes: routes,
+	mode: 'history',
 	linkActiveClass: 'is-active'
 });
 
@@ -19001,7 +19002,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\About.vue"
+__vue_options__.__file = "e:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\About.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "About"
 }__vue_options__.render = __vue_template__.render
@@ -19014,9 +19015,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5a769824", __vue_options__)
+    hotAPI.createRecord("data-v-30a3dc04", __vue_options__)
   } else {
-    hotAPI.reload("data-v-5a769824", __vue_options__)
+    hotAPI.reload("data-v-30a3dc04", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] About.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19047,7 +19048,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Contact.vue"
+__vue_options__.__file = "e:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Contact.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "Contact"
 }__vue_options__.render = __vue_template__.render
@@ -19060,9 +19061,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-cca41912", __vue_options__)
+    hotAPI.createRecord("data-v-cccc8152", __vue_options__)
   } else {
-    hotAPI.reload("data-v-cca41912", __vue_options__)
+    hotAPI.reload("data-v-cccc8152", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] Contact.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19093,7 +19094,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Home.vue"
+__vue_options__.__file = "e:\\xampp\\htdocs\\www\\laravel\\vue2-laracasts-spa\\resources\\assets\\js\\views\\Home.vue"
 if(typeof __vue_options__.name === "undefined") {
   __vue_options__.name = "Home"
 }__vue_options__.render = __vue_template__.render
@@ -19106,9 +19107,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0e1178d0", __vue_options__)
+    hotAPI.createRecord("data-v-082203b8", __vue_options__)
   } else {
-    hotAPI.reload("data-v-0e1178d0", __vue_options__)
+    hotAPI.reload("data-v-082203b8", __vue_options__)
   }
 })()}
 if (__vue_options__.functional && typeof __vue_template__ !== "undefined") {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
@@ -19144,7 +19145,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-0e1178d0", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-082203b8", module.exports)
   }
 }
 
@@ -19158,22 +19159,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row"
+    staticClass: "columns"
   }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
+    staticClass: "column is-8 is-offset-2"
+  }, [_c('nav', {
+    staticClass: "panel"
+  }, [_c('p', {
     staticClass: "panel-heading"
   }, [_vm._v("about page")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
+    staticClass: "panel-block"
+  }, [_vm._v("\n\t\t\t\t\tI'm an example component!\n\t\t\t\t")])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5a769824", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-30a3dc04", module.exports)
   }
 }
 
@@ -19187,22 +19188,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row"
+    staticClass: "columns"
   }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
+    staticClass: "column is-8 is-offset-2"
+  }, [_c('nav', {
+    staticClass: "panel"
+  }, [_c('p', {
     staticClass: "panel-heading"
   }, [_vm._v("contact page")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
+    staticClass: "panel-block"
+  }, [_vm._v("\n\t\t\t\t\tI'm an example component!\n\t\t\t\t")])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-cca41912", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-cccc8152", module.exports)
   }
 }
 

@@ -1,21 +1,19 @@
 <template>
-	<div class="container">
-		<div class="columns">
-			<div class="column">
-				<div class="message" v-for="status in statuses">
-					<div class="message-header">
-						<p>
-							{{ status.user.name }} said...
-						</p>
+	<div class="columns">
+		<div class="column">
+			<div class="message" v-for="status in statuses">
+				<div class="message-header">
+					<p>
+						{{ status.user.name }} said...
+					</p>
 
-						<p>
-							{{ postedOn(status) }}
-						</p>
-					</div>
+					<p>
+						{{ postedOn(status) }}
+					</p>
+				</div>
 
-					<div class="message-body" v-text="status.body">
-						I'm an example component!
-					</div>
+				<div class="message-body" v-text="status.body">
+					I'm an example component!
 				</div>
 			</div>
 		</div>
