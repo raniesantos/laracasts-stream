@@ -15,7 +15,7 @@
 				<div class="message-body" v-text="status.body"></div>
 			</div>
 
-			<add-to-stream></add-to-stream>
+			<add-to-stream @completed="addStatus"></add-to-stream>
 		</div>
 	</div>
 </template>
@@ -33,13 +33,26 @@
 				statuses: []
 			}
 		},
+
 		created() {
 			Status.all(statuses => this.statuses = statuses);
 		},
+
 		filters: {
 			ago(date) {
 				return moment(date).fromNow();
 			}
+		},
+
+		methods: {
+			addStatus(status) {
+				this.statuses.unshift(status);
+
+				window.scrollTo(0, 0);
+
+				alert('Status posted!');
+			}
 		}
+
 	}
 </script>

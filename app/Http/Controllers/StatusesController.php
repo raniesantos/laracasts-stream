@@ -15,7 +15,7 @@ class StatusesController extends Controller
      */
     public function index()
     {
-        return Status::with('user')->get();
+        return Status::with('user')->latest()->get();
     }
 
     /**

@@ -5,13 +5,14 @@
 		</div>
 
 		<div class="message-body">
-			<form @submit.prevent="onSubmit">
+			<form @submit.prevent="onSubmit" @keydown="form.errors.clear()">
 				<p class="control">
 					<textarea class="textarea" placeholder="I have something to say..." v-model="form.body"></textarea>
+					<span class="help is-danger" v-if="form.errors.has('body')" v-text="form.errors.get('body')"></span>
 				</p>
 
 				<p class="control">
-					<button class="button is-primary">Submit</button>
+					<button class="button is-primary" :disabled="form.errors.any()">Submit</button>
 				</p>
 			</form>
 		</div>
@@ -27,7 +28,9 @@
 		},
 		methods: {
 			onSubmit() {
-				this.form.post('http://localhost/laravel/vue2-laracasts-spa/public/statuses').then(status => alert('All done!'));
+				this.form
+					.post('http://localhost/laravel/vue2-laracasts-spa/public/statuses')
+					.then(status => this.$emit('completed', status));
 			}
 		}
 	}
