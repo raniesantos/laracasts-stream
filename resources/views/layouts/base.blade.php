@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="app-url" content="{{ url('/') }}">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">

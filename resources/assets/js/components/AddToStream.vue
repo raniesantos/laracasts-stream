@@ -29,7 +29,7 @@
 		methods: {
 			onSubmit() {
 				this.form
-					.post('http://localhost/laravel/vue2-laracasts-spa/public/statuses')
+					.post(App.url('/statuses'))
 					.then(status => this.$emit('completed', status));
 			}
 		}

@@ -1,6 +1,6 @@
 class Status {
 	static all(then) {
-		return axios.get('http://localhost/laravel/vue2-laracasts-spa/public/statuses')
+		return axios.get(App.url('/statuses'))
 			.then(({data}) => then(data));
 	}
 }
