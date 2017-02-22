@@ -1,6 +1,9 @@
 <template>
 	<div class="columns">
 		<div class="column">
+
+			<add-to-stream @completed="addStatus"></add-to-stream>
+			
 			<div class="message" v-for="status in statuses">
 				<div class="message-header">
 					<p>
@@ -15,7 +18,6 @@
 				<div class="message-body" v-text="status.body"></div>
 			</div>
 
-			<add-to-stream @completed="addStatus"></add-to-stream>
 		</div>
 	</div>
 </template>
