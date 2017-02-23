@@ -12,8 +12,9 @@ window.axios.defaults.headers.common = {
 };
 
 window.Form = Form;
+
 window.App = {
-	index: document.querySelector('meta[name="app-url"]').getAttribute('content'),
+	index: document.querySelector('meta[name="app-url"]').content,
 	url(route) {
 		return this.index + route;
 	}

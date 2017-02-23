@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="nav-left">
 					<a class="nav-item">
-						my stream
+						{{ config('app.name') }}
 					</a>
 				</div>
 				<span class="nav-toggle">
@@ -40,7 +40,7 @@
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<h1 class="title">
-				my stream
+				{{ config('app.name') }}
 			</h1>
 			<h2 class="subtitle">
 				laracasts demo
