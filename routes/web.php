@@ -4,6 +4,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/statuses', 'StatusesController@index');
+Route::get('/statuses', 'StatusController@index');
 
-Route::post('statuses', 'StatusesController@store');
+Route::post('/statuses', 'StatusController@store');

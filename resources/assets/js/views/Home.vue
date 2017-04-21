@@ -50,8 +50,6 @@
 			addStatus(status) {
 				this.statuses.unshift(status);
 
-				window.scrollTo(0, 0);
-
 				alert('Status posted!');
 			}
 		}
